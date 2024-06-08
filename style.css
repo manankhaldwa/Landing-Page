@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Kablammo&family=Lato:ital,wght@1,400;1,700&family=Pacifico&family=Poppins&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "poppins", sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url("images/default-pizza.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+}
+
+nav{
+    width: 100%;
+    height: 70px;
+    padding: 0px 70px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 0px 5px grey;
+}
+
+.logo{
+    font-weight: 900;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    z-index: 1;
+}
+
+.logo span{
+    color:tomato;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;  
+    position: relative; 
+}
+
+.menu a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.menu a:hover::after{
+    width: 100%;
+}
+
+.menu a:last-child{
+    background: tomato;
+    color: white;
+    border-radius: 0.8rem;
+}
+
+.hero-text{
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    padding: 15px ;
+}
+
+
+.hero-text p{
+    color: #fff;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.hero-text h1{
+    color: #fff;
+    font-size: 4rem;
+    line-height: 1.5em;
+}
+
+.hero-text h1 span{
+    color: brown;
+}
+
+.hero-text h2{
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 0.5em;
+}
+
+#order{
+    text-decoration: none;
+    color: white;
+    background-color: brown;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+#dis{
+    text-decoration: none;
+    color: white;
+    background: #262626;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+.food-img{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+}
+
+.food-img img{
+    transition: 0.4s ease;
+}
+
+.food-img img:hover{
+    transform: translateY(-15%);
+}
